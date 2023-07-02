@@ -5,14 +5,20 @@ function contar(){
     var res = document.querySelector('div#res');
     if(isNaN(valor) || isNaN(valorFi) || isNaN(pular)){
         window.alert('[Erro] preencha os devidos espaços')
+
+    }else if (pular == 0 || valorFi == 0 ) {
+        window.alert('[Erro] valores preenchidos devem ser diferente de "0"')
+
+    }else if (valorFi <= valor) {
+        window.alert('[Erro] valor inicial deve ser menor que valor final')
+
     }else{
         var i = valor;
         var contador = '';
         while( i <=valorFi ){
-            contador += i + ' ';
+            contador += '\u{1f449}' + i + ' ';
             i += pular;
-        }
-        res.textContent = 'Contador: '+ contador;
-        
+            res.textContent = 'Contador: '  + contador +'\u{1f3c1}';
+        }  
     }    
 }
