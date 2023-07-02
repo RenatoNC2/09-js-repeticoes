@@ -5,36 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ATIVIDADE</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body >
     <header>
-        <h1>VAMOS CONTAR</h1>
+        <h1>TABUADA</h1>
     </header>
     <section>
         <div> 
-         <p>
-            Início: <Input Type="text" id="inicial">
-         </p>
-         <p>
-            Fim: <Input Type="text" id="final" >
-         </p>
-         <p>
-            Passo: <Input Type="text" id="pularDe" >
-         </p>
-         <p>
-            <input type="button" value="contar" onclick="contar()">
-         </p>
-
+            <p>  Numero:<input Type="number" name="num" id="txtn" > 
+            <input type="button" value="Gerar Tabuada" onclick="start()"></p>
         </div>
-        <div id="res">
-            Contando:
+        <div >
+            <select name="tabuada" id="seltab" size="10">
+                <option>Digite um valor a acima</option>
+            </select>
         </div>
-
     </section>
     <footer>
         <p>&copy; atividade9 </p>
     </footer>
-    <script src="scripts.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
